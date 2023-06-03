@@ -1,0 +1,6 @@
+@use '../defaults/object-color';
+
+.input-field:hover {
+    @include object-color.background-color(#f5ebff);
+    cursor: pointer;
+}

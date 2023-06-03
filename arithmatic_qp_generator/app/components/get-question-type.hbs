@@ -1,0 +1,4 @@
+<div>
+    <label for="{{@type}}">{{yield}} </label>
+    <Input @type="checkbox" data-test-input id="{{@type}}" {{on 'input' (fn @getOperators @type)}}  />
+</div>

@@ -1,0 +1,45 @@
+<form action="get">
+    <h1 class="form-head">Give Details</h1>
+    <div class="form-control numOfQues">
+        <label for="numberOfQuestions" class="required">Number of questions:</label>
+        <Input @type="text" id="numberOfQuestions" class="input-field" @value={{this.numberOfQuestions}} />
+    </div>
+    <div class="form-control typeOfQues">
+        <label for="questionType" class="required">Type of questions:</label>
+        <div id="questionType">
+            <div>
+                <label for="addition">Addition</label>
+                <Input @type="checkbox" data-test-input id="addition" checked @checked={{this.addition}}/>
+            </div>
+            <div>
+                <label for="subtraction">Subtraction</label>
+                <Input @type="checkbox" id="subtraction" @checked={{this.subtraction}}/>
+            </div>
+            <div>
+                <label for="multiplication">Multiplication</label>
+                <Input @type="checkbox" id="multiplication" @checked={{this.multiplication}}/>
+            </div>
+        </div>
+    </div>
+    <div class="form-control quesDifficulty">
+        <label for="questionDifficulty">Difficulty Level:</label>
+        <div id="questionDifficulty">
+            <div>
+                <label for="easy">Easy</label>
+                <input type="radio" name="level" id="easy" value="easy" checked {{on 'click' this.setDifficulty}} >
+            </div>
+            <div>
+                <label for="medium">Medium</label>
+                <input type="radio" name="level" id="medium" value="medium" {{on 'click' this.setDifficulty}} >
+            </div>
+            <div>
+                <label for="hard">Hard</label>
+                <input type="radio" name="level" id="hard" value="hard" {{on 'click' this.setDifficulty}} >
+            </div>            
+        </div>
+    </div>
+    <div class="form-control-button generate">
+        <button type="button" class="form-button" {{on 'click' this.submit}} >Generate</button>
+        <LinkTo @route="question-paper" {{click-when this.arithmeticQuestions.isSubmit}} class="hide">Generate</LinkTo>
+    </div>
+</form>

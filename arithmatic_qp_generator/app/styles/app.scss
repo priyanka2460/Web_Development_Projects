@@ -1,0 +1,30 @@
+@use './defaults/heading';
+@use './defaults/displays';
+@use './defaults/object-color';
+@use './defaults/hide';
+@use './defaults/input-field';
+@use './defaults/table';
+@use './defaults/button';
+
+@use './components/get-details';
+
+@use './templates/question-paper';
+@use './templates/result';
+
+body{
+    @include object-color.background(to right bottom,#ea75ff,#aa75ff,#75e1ff);
+    background-attachment: fixed;
+}
+
+.main-page {
+    display: flex;
+    @include displays.display-card(flex);
+    flex-direction: column;
+
+    .form-page {
+        width: 400px;
+        padding: 20px;
+        @include object-color.background-color(#eddaff);
+        border-radius: 7px;
+    }
+}

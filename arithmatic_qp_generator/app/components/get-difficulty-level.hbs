@@ -1,0 +1,4 @@
+<div>
+    <label for="{{@level}}">{{yield}} </label>
+    <input type="radio" name="level" id="easy" {{on 'click' (fn @setLevel @level)}} >
+</div>

@@ -1,0 +1,29 @@
+{{page-title "QuestionPaper"}}
+
+<div class="question-paper full-height">
+    <h1 class="heading">Arithmetic Question Paper</h1>
+
+    <table class="questions-table">
+        <tr>
+            <th class="table-head">Sr No.</th>
+            <th class="table-head">Question</th>
+            <th class="table-head">Enter Answer</th>
+        </tr>
+        {{#each this.questions.qBank as |question index|}}
+        <tr>
+            <td>{{this.serialNum index}}.</td>
+            <td>{{question}}</td>
+            <td><Input class="input-field" {{on 'change' this.verify}} /></td>
+        </tr>
+        {{/each}}
+    </table>
+    <div class="question-paper-button">
+        <button type="button" class="button" {{on 'click' this.checkAnswers}}>Submit</button>
+        <LinkTo @route="result" {{click-when this.answers.isResult}} class="hide" >Submit</LinkTo>
+    </div>
+</div>
+
+
+
+
+

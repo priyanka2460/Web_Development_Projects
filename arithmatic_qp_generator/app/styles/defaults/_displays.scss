@@ -1,0 +1,8 @@
+@mixin display-card($type, $align: center) {
+    display: $type;
+    @if $type == "flex"
+    {
+        justify-content: $align;
+        align-items: center;
+    }
+}

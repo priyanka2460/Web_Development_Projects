@@ -1,0 +1,5 @@
+@use '../defaults/displays';
+
+.hide {
+    @include displays.display-card(none);
+}

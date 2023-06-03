@@ -1,0 +1,36 @@
+{{page-title "Result"}}
+
+<div class="result-page full-height">
+    <h1 class="heading">Result</h1>
+    <table>
+        <tr>
+            <th class="table-head">Sr no.</th>
+            <th class="table-head">Question</th>
+            <th class="table-head">Your Answer</th>
+            <th class="table-head">Result</th>
+        </tr>
+        {{#each this.results.studentResults as |item index|}}
+        <tr>
+            <td>{{this.serialNum index}}.</td>
+            <td>{{item.problem}}</td>
+            <td>{{item.studentAns}}</td>
+            <td>
+                {{#if item.result}}
+                <img src="assets/images/right.png" alt="correct" class="result-img">
+                {{else}}
+                <img src="assets/images/wrong.png" alt="wrong" class="result-img">
+                {{/if}}
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+
+    <p class="result-message">{{this.marksObtained}} questions are correct out of {{this.totalQuestions}}. </p>
+
+    <div class="link-to-page">
+        <LinkTo @route="index" class="button" {{on 'click' this.clear}}>Create a new question paper</LinkTo>
+    </div>
+</div>
+
+
+

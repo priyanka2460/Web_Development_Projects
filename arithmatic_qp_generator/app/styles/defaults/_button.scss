@@ -1,0 +1,17 @@
+@use '../defaults/object-color';
+
+.button {
+    width: 200px;
+    padding: 10px;
+    border: 1.5px solid rgb(56, 18, 92);
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    @include object-color.background(to left top,#ea75ff,#aa75ff,#75e1ff);
+    @include object-color.textcolor(#f5ebff);
+    
+    &:hover {
+        @include object-color.background(to left top,#ef91ff,#b384fe,#95e8ff);
+        box-shadow: 1px 1px 2.5px object-color.$violet;
+    }
+}

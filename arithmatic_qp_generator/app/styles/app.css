@@ -1,0 +1,144 @@
+.heading {
+  font-family: system-ui;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.hide {
+  display: none;
+}
+
+.input-field:hover {
+  background-color: #f5ebff;
+  cursor: pointer;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eddaff;
+  border: 1.5px solid #414141;
+  border-collapse: collapse;
+  width: 450px;
+}
+
+.table-head {
+  color: blueviolet;
+  font-family: sans-serif;
+}
+
+td,
+th {
+  border: 1px solid #414141;
+  text-align: center;
+  padding: 8px;
+  font-family: cursive;
+}
+
+.button {
+  width: 200px;
+  padding: 10px;
+  border: 1.5px solid rgb(56, 18, 92);
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(to left top, #ea75ff, #aa75ff, #75e1ff);
+  color: #f5ebff;
+}
+.button:hover {
+  background: linear-gradient(to left top, #ef91ff, #b384fe, #95e8ff);
+  box-shadow: 1px 1px 2.5px blueviolet;
+}
+
+.form-head {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  color: blueviolet;
+}
+
+.form-control {
+  padding: 10px;
+  width: 380px;
+}
+.form-control .required::after {
+  color: red;
+  content: "*";
+}
+.form-control #questionType,
+.form-control #questionDifficulty {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form-control #questionType div,
+.form-control #questionDifficulty div {
+  margin-right: 20px;
+}
+
+.form-control-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.form-control-button .form-button {
+  width: 100px;
+  height: 35px;
+  border: 0px;
+  border-radius: 18px;
+  background: linear-gradient(to left top, #ea75ff, #aa75ff, #75e1ff);
+  color: #f5ebff;
+}
+.form-control-button .form-button:hover {
+  background: linear-gradient(to left top, #ef91ff, #b384fe, #95e8ff);
+  box-shadow: 1px 1px 2.5px blueviolet;
+}
+
+.question-paper {
+  margin: 50px;
+  text-align: center;
+}
+.question-paper .question-paper-button {
+  margin: 20px;
+}
+
+.result-page .result-message {
+  margin: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: cursive;
+  text-shadow: 1px 0px black, -1px 0px black, 0px 1px black, 0px -1px black;
+  color: #a0ff06;
+  text-align: center;
+}
+.result-page .result-img {
+  width: 20px;
+}
+.result-page .link-to-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: linear-gradient(to right bottom, #ea75ff, #aa75ff, #75e1ff);
+  background-attachment: fixed;
+}
+
+.main-page {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-page .form-page {
+  width: 400px;
+  padding: 20px;
+  background-color: #eddaff;
+  border-radius: 7px;
+}/*# sourceMappingURL=app.css.map */

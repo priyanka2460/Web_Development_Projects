@@ -1,0 +1,49 @@
+@use '../defaults/object-color';
+@use '../defaults/displays';
+
+.form-head {
+    font: {
+        family: sans-serif;
+        weight: 600;
+        size: 30px
+    }
+    text-align: center;
+    @include object-color.textcolor(object-color.$violet);
+}
+
+.form-control {
+    padding: 10px;
+    width: 380px;
+    
+    .required::after {
+        @include object-color.textcolor(red);
+        content: "*";
+    }
+
+    #questionType,
+    #questionDifficulty {
+        @include displays.display-card(flex,flex-start);
+        div {
+            margin-right: 20px;
+        }
+    }
+}
+
+.form-control-button {
+    @include displays.display-card(flex);
+    margin-top: 15px;
+
+    .form-button {
+        width: 100px;
+        height: 35px;
+        border: 0px;
+        border-radius: 18px;
+        @include object-color.background(to left top,#ea75ff,#aa75ff,#75e1ff);
+        @include object-color.textcolor(#f5ebff);
+        
+        &:hover {
+            @include object-color.background(to left top,#ef91ff,#b384fe,#95e8ff);
+            box-shadow: 1px 1px 2.5px object-color.$violet;
+        }
+    }
+}

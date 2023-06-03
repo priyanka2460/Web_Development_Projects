@@ -1,0 +1,13 @@
+$violet: blueviolet;
+
+@mixin background-color($color){
+    background-color: $color;
+}
+
+@mixin background($direction,$colors...){
+    background: linear-gradient($direction,$colors...);       
+}
+
+@mixin textcolor($color){
+    color: $color;
+}

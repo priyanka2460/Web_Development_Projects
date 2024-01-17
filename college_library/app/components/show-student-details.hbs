@@ -1,0 +1,25 @@
+<div class="show-students-details-container">
+    <h2>Students data:</h2>
+    <table class="show-students-details-table">
+        <tr>
+            <th>Student Name</th>
+            <th>Student Phone Number</th>
+            <th>Student Email</th>
+            <th>Book Borrowed</th>
+            <th>Borrowed Date</th>
+            <th>Returned Date</th>
+            <th>Total Fine Remaining</th>
+        </tr>
+        {{#each this.library.studentsData as |student|}}
+        <tr>
+            <td>{{student.name}} </td>
+            <td>{{student.phone}} </td>
+            <td>{{student.email}} </td>
+            <td>{{student.title}} </td>
+            <td>{{student.dateBorrowed}} </td>
+            <td>{{student.dateReturned}} </td>
+            <td>{{student.fine}} </td>
+        </tr>
+        {{/each}}
+    </table>
+</div>

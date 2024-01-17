@@ -1,0 +1,21 @@
+.admin-manage {
+    margin: 50px;
+    display: flex;
+}
+.admin-display {
+    margin: 50px;
+    .admin-handler {
+        .remove-btn {
+            padding: 10px;
+            background-color: #b4482a;
+            border: unset;
+            border-radius: 20px;
+            color: #fee9cc;
+            font-weight: bold;
+            &:hover {
+                background-color: #e06948;
+                border: 1px solid #b4482a;
+            }
+        }
+    }
+}

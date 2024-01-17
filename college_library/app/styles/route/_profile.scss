@@ -1,0 +1,104 @@
+.profile-page{
+    margin: 70px;
+    background-color: #f0f8ffb9;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    .profile-head {
+        background-color: #f9683fd3;
+        color: #fff6f4;
+        margin: 0px;
+        padding: 10px;
+        display: inline;
+        font: {
+            size: 30px;
+            family: Verdana, Geneva, Tahoma, sans-serif;
+            weight: bold;
+        }
+        button {
+            float: right;
+            width: 100px;
+            padding: 10px;
+            background-color: #ffe2dc;
+            border: 1px solid #fd987ced;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: #b4482a;
+            border-radius: 2px;
+            &:hover {
+                background-color: #ffcbbf;
+            }
+        }
+    }
+    .profile-details {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        color: #e06948;
+        font: {
+            size: 20px;
+            family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        span {
+            margin: 10px;
+        }
+    }
+    .profile-book-details {
+        background-color: #f0f8ffd6;
+        border-radius: 5px;
+        margin: 30px;
+        padding: 10px;
+        display: flex;
+        div {
+            margin: 15px;
+            h2 {
+                font: {
+                    size: 20px;
+                    style: oblique;
+                }
+                margin-bottom: 5px;
+                color: #c64623;
+            }
+            h4 {
+                font: {
+                    size: 10px;
+                    style: oblique;
+                }
+                margin: 2px;
+                color: #ff9578;
+            }
+            p {
+                font: {
+                    size: 15px;
+                    style: oblique;
+                }
+                color: #e06948;
+            }
+        }
+        img {
+            width: 140px;
+        }
+    }
+    .return-book-form {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        color: #e06948;
+        font: {
+            size: 20px;
+            family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        label {
+            align-self: center;
+            .return-book-date {
+                background-color: #fcdcb3d0;
+                font: {
+                    size: 20px;
+                    family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                color: #e06948;
+                padding: 10px;
+                border: unset;
+            }
+        }
+    }
+}

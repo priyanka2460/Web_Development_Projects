@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "type": "book",
+            "id": "alchemist",
+            "attributes": {
+                "title": "The Alchemist",
+                "description": "The Alchemist is a classic novel in which a boy named Santiago embarks on a journey seeking treasure in the Egyptian pyramids after having a recurring dream about it and on the way meets mentors, falls in love, and most importantly, learns the true importance of who he is and how to improve himself",
+                "author": "Paulo Coelho",
+                "img": "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg"
+            }
+            
+        },
+        {
+            "type": "book",
+            "id": "rich",
+            "attributes": {
+                "title": "Rich Dad Poor Dad",
+                "description": "The Alchemist is a classic novel in which a boy named Santiago embarks on a journey seeking treasure in the Egyptian pyramids after having a recurring dream about it and on the way meets mentors, falls in love, and most importantly, learns the true importance of who he is and how to improve himself",
+                "author": "Paulo Coelho",
+                "img": "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg"
+            }
+        }
+    ]
+}

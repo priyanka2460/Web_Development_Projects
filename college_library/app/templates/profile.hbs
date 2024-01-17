@@ -1,0 +1,28 @@
+{{page-title "Profile"}}
+{{this.checkLogin}}
+<div class={{if this.isLogin "profile-page" "hide"}}>
+    <div class="profile-head">
+        <span>{{this.library.loggedStudent.name}}</span>
+        <button class="log-out-btn" type="button" {{on 'click' this.logOut}}>Log Out</button>
+    </div>
+    <div class="profile-details">
+        <span>Address: {{this.library.loggedStudent.address}}</span>
+        <span>Email: {{this.library.loggedStudent.email}}</span>
+        <span>Phone Number: {{this.library.loggedStudent.phone}}</span>
+    </div>
+    {{this.isBookBorrowed}}
+    <div class={{if this.isBookAvailable "borrowed-book-details" "hide"}}>
+        <div class="profile-book-details">
+            <div>
+                <h2>{{this.library.loggedStudent.title}}</h2>
+                <h4>By {{this.library.loggedStudent.author}} </h4>
+                <p>{{this.library.loggedStudent.description}} </p>
+            </div>
+            <img src="{{this.library.loggedStudent.img}}" alt="book-picture">
+        </div>
+        <form class="return-book-form">
+            <label>Enter date: <input type="date" class="return-book-date" {{on 'change' this.getDate}}></label>
+            <button type="button" class="submit-btn" {{on 'click' this.returnBook}}>Return Book</button>
+        </form>
+    </div>
+</div>

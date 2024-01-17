@@ -1,0 +1,21 @@
+.navbar {
+    width: 100%;
+    background-color:#c64623;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    .link {
+        margin: 0;
+        padding: 20px;
+        color: #ffdbd1;
+        font: {
+            family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            size: 20px;
+        }
+        text-decoration: none;
+        display: inline-block;
+        &:hover {
+            background-color: #ff7b57;
+        }
+    }
+}

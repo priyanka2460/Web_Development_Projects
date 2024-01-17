@@ -1,0 +1,20 @@
+.student-details-form {
+    width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #e06948;
+    background-color: #fcdcb3d0;
+    border-radius: 15px;
+    font: {
+        size: 20px;
+        family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    label {
+        &::after {
+            content: '*';
+            color: red;
+        }
+    }
+}

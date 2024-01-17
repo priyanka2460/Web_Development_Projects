@@ -1,0 +1,18 @@
+{{page-title "Home"}}
+<div class="home-page">
+    <h1 class="home-page-heading">Welcome To Library Management System</h1>
+    <h2 class="home-page-sub-heading">All Books</h2>
+    {{#if this.isMessage}}
+    <h3 class="error-message">{{this.message}} </h3>
+    {{/if}}
+    <ShowBooks as |id|>
+        <div class="student-handler">
+            <p class="available-message">{{this.checkAvailability id}}</p>
+            <div class="get-book">
+                <label>Enter date:</label>
+                <input type="date" class="get-book-date" {{on 'change' this.getDate}}>
+                <button type="button" class="submit-btn" {{on 'click' (fn this.getBook id)}} >Get Book</button>
+            </div>
+        </div>
+    </ShowBooks>
+</div> 

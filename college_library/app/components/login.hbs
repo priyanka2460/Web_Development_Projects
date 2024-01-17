@@ -1,0 +1,12 @@
+<form class="login-form {{if this.isSubmit "hide"}}">
+    <label>Enter email/phone number:</label>
+    <Input @value={{this.studentInfo}} class="student-detail" />
+
+    <label>Enter password:</label>
+    <Input @value={{this.studentPassword}} class="student-detail" />
+    {{#if this.isErrorMessage}}
+    <p class="message">{{this.errorMessage}} </p>
+    {{/if}}
+    <button class="submit-btn" type="button" {{on 'click' this.submitDetails}}>Submit</button>
+    <LinkTo @route="profile" {{click-when this.isSubmit}} class="hide" >Profile</LinkTo>
+</form>

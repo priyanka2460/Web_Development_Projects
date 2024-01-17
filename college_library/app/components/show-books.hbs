@@ -1,0 +1,24 @@
+<ul class="book-list">
+    <div class="search-box">
+        <img src="/assets/images/search.png" alt="search" class="search-img">
+        <Input @value={{this.searchTitle}} class="search-bar" placeholder="Search.." />
+    </div>
+    
+    <ShowBooks::Filter @books={{this.library.libraryItems}} @query={{this.searchTitle}} as |results| >
+        {{#each results as |book|}}
+        <li class="show-book">
+            <div class="book-details">
+                <div>
+                    <h2 class="book-title">{{book.title}} </h2>
+                    <h4 class="book-author">By {{book.author}} </h4>
+                    <p class="book-description">{{book.description}} </p>
+                    <p class="book-count">Book Count:{{book.count}} </p>
+                </div>
+                <img src="{{book.img}}" alt="book-picture" class="book-img">
+            </div>
+            <div class="book-action">{{yield book.id}} </div>
+        </li>
+        {{/each}}
+    </ShowBooks::Filter>
+    
+</ul>

@@ -1,0 +1,39 @@
+.add-book-form {
+    width: 600px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fcdcb3d0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #e06948;
+    font: {
+        size: 20px;
+        family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    label {
+        &::after {
+            content: '*';
+            color: red;
+        }
+    }
+    .add-book-detail,
+    .add-book-description,
+    .add-book-img {
+        padding: 10px;
+        background-color: #fee9cc;
+        border: unset;
+        border-radius: 5px;
+        color: #b4482a;
+        font: {
+            size: 15px;
+            family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+    .add-book-description {
+        height: 60px;
+    }
+    .add-book-img {
+        color: #a58253;
+    }
+}

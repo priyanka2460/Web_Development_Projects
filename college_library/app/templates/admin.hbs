@@ -1,0 +1,13 @@
+{{page-title "Admin"}}
+
+<div class="admin-manage">
+    <AddBook />
+    <ShowStudentDetails />
+</div>
+<div class="admin-display">
+    <ShowBooks as |id|>
+        <div class="admin-handler">
+            <button type="button" class="remove-btn" {{on 'click' (fn this.removeThisBook id)}}>Remove</button>
+        </div>
+    </ShowBooks>
+</div>

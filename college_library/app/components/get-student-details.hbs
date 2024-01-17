@@ -1,0 +1,21 @@
+<form class="student-details-form">
+    <label>Enter name:</label>
+    <Input @value={{this.studentName}} class="student-detail" />
+
+    <label>Enter address</label>
+    <Input @value={{this.studentAddress}} class="student-detail" />
+
+    <label>Enter email</label>
+    <Input @value={{this.studentEmail}} placeholder="@gmail.com" class="student-detail" />
+
+    <label>Enter phone number:</label>
+    <Input @value={{this.studentPhone}} class="student-detail" />
+
+    <label>Create password:</label>
+    <Input @value={{this.studentPassword}} placeholder="should be greater than 8 characters" class="student-detail" />
+
+    <button class="submit-btn" type="button" {{on 'click' this.submitDetails}}>Submit</button>
+    {{#if this.isMessage}}
+    <p class="message">{{this.message}} </p>
+    {{/if}}
+</form>

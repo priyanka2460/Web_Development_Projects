@@ -1,0 +1,23 @@
+.show-students-details-container {
+    margin: 20px;
+    padding: 10px;
+    background-color: #fcdcb3d0;
+    border-radius: 15px;
+    color: #e06948;
+    font: {
+        size: 15px;
+        family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h2 {
+        color: #c8370f;
+    }
+    table {
+        background-color: #fcdcb3ee;
+        border-collapse: collapse;
+        border: 1px solid;
+        th,td {
+            padding: 10px;
+            border: 1px solid;
+        }
+    }
+}

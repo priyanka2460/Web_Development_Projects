@@ -1,0 +1,11 @@
+{{page-title "StudentLogin"}}
+<div class="student-login-page">
+    <div class={{if this.isLogin "hide" "student-login"}}>
+        <GetStudentDetails />
+        <p class="student-login-message">Already registered? <span class="login" {{on 'click' this.login}} >Login</span> </p>
+    </div>
+    <div class={{if this.isLogin "student-login" "hide"}}>
+        <p class="student-login-message">Not registered? <span class="login" {{on 'click' this.login}}>Register</span></p>
+        <Login />
+    </div>
+</div>

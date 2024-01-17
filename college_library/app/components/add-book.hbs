@@ -1,0 +1,34 @@
+<form class="add-book-form">
+    <label>Enter title of the book:</label>
+    <Input 
+        class="add-book-detail"
+        @value={{this.bookTitle}}
+    />
+
+    <label>Enter author:</label>
+    <Input 
+        class="add-book-detail"
+        @value={{this.bookAuthor}}
+    />
+
+    <label>Enter description:</label>
+    <Textarea
+        class="add-book-description"
+        @value={{this.bookDescription}}
+    />
+
+    <label>Add picture:</label>
+    <div class="add-book-img">
+        <input type="file" {{on 'input' this.addImg}}>
+    </div>
+    
+    <label>Enter count of the book:</label>
+    <Input 
+        class="add-book-detail"
+        @value={{this.bookCount}}
+    />
+    {{#if this.isErrorMessage}}
+    <p class="message">{{this.errorMessage}} </p>
+    {{/if}}
+    <button type="button" {{on 'click' this.addBook}} class="submit-btn">Add book</button>
+</form>

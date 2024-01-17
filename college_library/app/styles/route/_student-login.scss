@@ -1,0 +1,26 @@
+.student-login-page {
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    .student-login {
+        align-self: center;
+        color:#fffffe;
+        font-size: 30px;
+        .student-login-message {
+            margin: 5px;
+            padding: 20px;
+            text-align: center;
+            background-color: #fcdcb3d0;
+            border-radius: 20px;
+        }
+        .login {
+            font-weight: bold; 
+            color: #b4482a;
+            cursor: pointer;
+            &:hover {
+                color: #973216;
+            }
+        }
+
+    }
+}

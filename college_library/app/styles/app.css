@@ -1,0 +1,400 @@
+.add-book-form {
+  width: 600px;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgba(252, 220, 179, 0.8156862745);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  color: #e06948;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.add-book-form label::after {
+  content: "*";
+  color: red;
+}
+.add-book-form .add-book-detail,
+.add-book-form .add-book-description,
+.add-book-form .add-book-img {
+  padding: 10px;
+  background-color: #fee9cc;
+  border: unset;
+  border-radius: 5px;
+  color: #b4482a;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.add-book-form .add-book-description {
+  height: 60px;
+}
+.add-book-form .add-book-img {
+  color: #a58253;
+}
+
+.student-details-form {
+  width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #e06948;
+  background-color: rgba(252, 220, 179, 0.8156862745);
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.student-details-form label::after {
+  content: "*";
+  color: red;
+}
+
+.login-form {
+  width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: rgba(252, 220, 179, 0.8156862745);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  color: #e06948;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #c64623;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+.navbar .link {
+  margin: 0;
+  padding: 20px;
+  color: #ffdbd1;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+.navbar .link:hover {
+  background-color: #ff7b57;
+}
+
+.book-list {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px;
+}
+.book-list .search-box {
+  width: 300px;
+  margin: 5px auto;
+  padding: 0px;
+  border-radius: 20px;
+  display: flex;
+}
+.book-list .search-box .search-img {
+  width: 30px;
+  padding: 8px;
+  background-color: #c1c6c6;
+  border: 1px solid #4a4c4c;
+  border-radius: 20px;
+}
+.book-list .search-box .search-bar {
+  width: 250px;
+  margin-left: 0px;
+  padding: 5px;
+  border: 1px solid #4a4c4c;
+  border-radius: 20px;
+  color: #e06948;
+  font-size: 15px;
+  font-style: italic;
+}
+.book-list .show-book {
+  margin: 20px;
+  padding: 10px;
+  list-style: none;
+  background-color: rgba(240, 248, 255, 0.7254901961);
+  border-radius: 5px;
+}
+.book-list .show-book .book-details {
+  margin: 10px;
+  display: flex;
+}
+.book-list .show-book .book-details div {
+  margin: 15px;
+}
+.book-list .show-book .book-details div .book-title {
+  margin-bottom: 5px;
+  color: #c64623;
+  font-size: 20px;
+  font-style: oblique;
+}
+.book-list .show-book .book-details div .book-author {
+  margin: 2px;
+  color: #ff9578;
+  font-size: 10px;
+  font-style: oblique;
+}
+.book-list .show-book .book-details div .book-description {
+  color: #e06948;
+  font-size: 15px;
+  font-style: oblique;
+}
+.book-list .show-book .book-details div .book-count {
+  color: #c64623;
+  font-size: 20px;
+  font-style: oblique;
+}
+.book-list .show-book .book-details .book-img {
+  width: 160px;
+  right: 10px;
+  border-radius: 3px;
+}
+
+.show-students-details-container {
+  margin: 20px;
+  padding: 10px;
+  background-color: rgba(252, 220, 179, 0.8156862745);
+  border-radius: 15px;
+  color: #e06948;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.show-students-details-container h2 {
+  color: #c8370f;
+}
+.show-students-details-container table {
+  background-color: rgba(252, 220, 179, 0.9333333333);
+  border-collapse: collapse;
+  border: 1px solid;
+}
+.show-students-details-container table th, .show-students-details-container table td {
+  padding: 10px;
+  border: 1px solid;
+}
+
+.submit-btn {
+  width: 200px;
+  align-self: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #b4482a;
+  border: unset;
+  border-radius: 20px;
+  color: #fee9cc;
+  font-weight: bold;
+}
+.submit-btn:hover {
+  background-color: #e06948;
+  border: 1px solid #b4482a;
+}
+
+.hide {
+  display: none;
+}
+
+.error-message {
+  padding: 10px;
+  background-color: red;
+  border-radius: 5px;
+  color: #fee9cc;
+  font-size: 20px;
+}
+
+.message {
+  color: #b4482a;
+  align-self: center;
+  font-size: 20px;
+}
+
+.student-detail {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fee9cc;
+  border: unset;
+  border-radius: 5px;
+  color: #b4482a;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.admin-manage {
+  margin: 50px;
+  display: flex;
+}
+
+.admin-display {
+  margin: 50px;
+}
+.admin-display .admin-handler .remove-btn {
+  padding: 10px;
+  background-color: #b4482a;
+  border: unset;
+  border-radius: 20px;
+  color: #fee9cc;
+  font-weight: bold;
+}
+.admin-display .admin-handler .remove-btn:hover {
+  background-color: #e06948;
+  border: 1px solid #b4482a;
+}
+
+.profile-page {
+  margin: 70px;
+  background-color: rgba(240, 248, 255, 0.7254901961);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.profile-page .profile-head {
+  background-color: rgba(249, 104, 63, 0.8274509804);
+  color: #fff6f4;
+  margin: 0px;
+  padding: 10px;
+  display: inline;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.profile-page .profile-head button {
+  float: right;
+  width: 100px;
+  padding: 10px;
+  background-color: #ffe2dc;
+  border: 1px solid rgba(253, 152, 124, 0.9294117647);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #b4482a;
+  border-radius: 2px;
+}
+.profile-page .profile-head button:hover {
+  background-color: #ffcbbf;
+}
+.profile-page .profile-details {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #e06948;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.profile-page .profile-details span {
+  margin: 10px;
+}
+.profile-page .profile-book-details {
+  background-color: rgba(240, 248, 255, 0.8392156863);
+  border-radius: 5px;
+  margin: 30px;
+  padding: 10px;
+  display: flex;
+}
+.profile-page .profile-book-details div {
+  margin: 15px;
+}
+.profile-page .profile-book-details div h2 {
+  font-size: 20px;
+  font-style: oblique;
+  margin-bottom: 5px;
+  color: #c64623;
+}
+.profile-page .profile-book-details div h4 {
+  font-size: 10px;
+  font-style: oblique;
+  margin: 2px;
+  color: #ff9578;
+}
+.profile-page .profile-book-details div p {
+  font-size: 15px;
+  font-style: oblique;
+  color: #e06948;
+}
+.profile-page .profile-book-details img {
+  width: 140px;
+}
+.profile-page .return-book-form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #e06948;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.profile-page .return-book-form label {
+  align-self: center;
+}
+.profile-page .return-book-form label .return-book-date {
+  background-color: rgba(252, 220, 179, 0.8156862745);
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e06948;
+  padding: 10px;
+  border: unset;
+}
+
+.student-login-page {
+  margin: 70px;
+  display: flex;
+  flex-direction: column;
+}
+.student-login-page .student-login {
+  align-self: center;
+  color: #fffffe;
+  font-size: 30px;
+}
+.student-login-page .student-login .student-login-message {
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(252, 220, 179, 0.8156862745);
+  border-radius: 20px;
+}
+.student-login-page .student-login .login {
+  font-weight: bold;
+  color: #b4482a;
+  cursor: pointer;
+}
+.student-login-page .student-login .login:hover {
+  color: #973216;
+}
+
+body {
+  background-image: url("/assets/images/library.jpg");
+  margin: 0px;
+}
+
+.home-page {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-page .home-page-heading {
+  margin-top: 20px;
+  color: #f0f8ff;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.home-page .home-page-sub-heading {
+  margin: 5px;
+  color: #f0f8ff;
+  font-size: 35px;
+}
+.home-page .student-handler .available-message {
+  margin: 0px 35px;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+.home-page .student-handler .get-book {
+  color: #e06948;
+  margin-left: 20px;
+}
+.home-page .student-handler .get-book .get-book-date {
+  padding: 9px;
+  background-color: #fee9cc;
+  border: unset;
+  border-radius: 20px;
+  color: #fe805d;
+}/*# sourceMappingURL=app.css.map */

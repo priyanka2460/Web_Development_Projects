@@ -1,0 +1,60 @@
+@use './component/add-book';
+@use './component/get-student-details';
+@use './component/login';
+@use './component/navbar';
+@use './component/show-books';
+@use './component/show-student-details';
+
+@use './defaults/submit-button';
+@use './defaults/default-class';
+
+@use './route/admin';
+@use './route/profile';
+@use './route/student-login';
+
+body{
+    background-image: url('/assets/images/library.jpg');
+    margin: 0px;
+}
+.home-page {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .home-page-heading {
+        margin-top: 20px;
+        color: #f0f8ff;
+        font: {
+            size: 50px;
+            family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+    .home-page-sub-heading {
+        margin: 5px;
+        color: #f0f8ff;
+        font: {
+            size: 35px;
+        }
+    }
+    .student-handler {
+        .available-message {
+            margin: 0px 35px;
+            color: red;
+            font: {
+                size: 25px;
+                weight: bold;
+            }
+        }
+        .get-book {
+            color: #e06948;
+            margin-left: 20px;
+            .get-book-date {
+                padding: 9px;
+                background-color: #fee9cc;
+                border: unset;
+                border-radius: 20px;
+                color: #fe805d;
+            }
+        }
+    }
+}
